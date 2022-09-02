@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.boughaba.medicinestockmanagement">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission
+        android:name="android.permission.CAMERA"
+        android:required="true" />
+
+    <uses-feature
+        android:name="android.hardware.camera.autofocus"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_drugstore"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_drugstore"
+        android:usesCleartextTraffic="true"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MedicineStockManagement">
+        <service
+            android:name=".service.SyncService"
+            android:enabled="true"
+            android:exported="true"></service>
+        <activity
+            android:name=".ui.add.AddActivity"
+            android:label="@string/add_med_title"
+            android:parentActivityName=".ui.main.MainActivity" />
+        <activity
+            android:name=".ui.details.ViewDetails"
+            android:label="Détails du médicament"
+            android:parentActivityName=".ui.main.MainActivity" />
+        <activity
+            android:name=".camera.barcode"
+            android:screenOrientation="fullSensor"
+            android:stateNotNeeded="true"
+            android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".ui.main.MainActivity"
+            android:label="Medicine managament">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.mlkit.vision.DEPENDENCIES"
+            android:value="ocr" />
+    </application>
+
+</manifest>

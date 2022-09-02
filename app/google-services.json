@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "706429594234",
+    "firebase_url": "https://medicine-stock-managemen-392e7-default-rtdb.firebaseio.com",
+    "project_id": "medicine-stock-managemen-392e7",
+    "storage_bucket": "medicine-stock-managemen-392e7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:706429594234:android:00d96e0f988bc9844969c3",
+        "android_client_info": {
+          "package_name": "com.boughaba.medicinestockmanagement"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "706429594234-jdc1m7jno2mtgikmmkp88a9if39udckm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB28YcfQ_aZNUwWQLNfUOeVjtW6JD1UTJc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "706429594234-jdc1m7jno2mtgikmmkp88a9if39udckm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

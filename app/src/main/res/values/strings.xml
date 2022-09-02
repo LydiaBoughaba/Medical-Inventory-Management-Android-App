@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Medicine management</string>
+    <string name="add_med_title">Ajouter un médicament</string>
+</resources>
